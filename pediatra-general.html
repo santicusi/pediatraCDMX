@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pediatra en CDMX | Dra. Tessa Bocardo · Hospital Ángeles Mocel</title>
+<meta name="description" content="Pediatra particular en CDMX. Consulta pediátrica integral en Hospital Ángeles Mocel con la Dra. Tessa Bocardo. Atención cercana y humana. Agenda hoy por WhatsApp.">
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17764356102"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17764356102');
+</script>
+
+<!-- Función de conversión: se dispara y luego abre WhatsApp -->
+<script>
+  function contactoWhatsApp(url){
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17764356102/_VgECMaYosIcEIag2pZC',
+      'value': 1.0,
+      'currency': 'COP',
+      'event_callback': function(){ window.open(url, '_blank'); }
+    });
+    // Respaldo por si el callback no se ejecuta
+    setTimeout(function(){ window.open(url, '_blank'); }, 700);
+    return false;
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#21303A;          /* texto principal, casi pizarra */
+  --teal:#0E6E6B;         /* verde clínico de confianza */
+  --teal-deep:#0A4F4D;
+  --blush:#F6D7DE;        /* rosa suave, cuidado/maternidad */
+  --blush-soft:#FBEDF0;
+  --cream:#FBF8F4;        /* fondo cálido */
+  --sand:#EFE8DD;
+  --gold:#C9A24B;         /* acento lujo, muy medido */
+  --white:#FFFFFF;
+  --grey:#6B7882;
+  --line:#E4DDD2;
+  --shadow:0 18px 50px rgba(33,48,58,.10);
+  --shadow-sm:0 6px 20px rgba(33,48,58,.08);
+  --wa:#25D366;
+  --wa-deep:#128C7E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--teal)}
+em{font-style:italic;color:var(--teal)}
+
+/* ---------- NAV ---------- */
+header.nav{position:sticky;top:0;z-index:100;background:rgba(251,248,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-size:1.18rem;font-weight:600;color:var(--ink)}
+.brand img{height:42px;width:auto}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--blush-soft)}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-size:.92rem;font-weight:500;color:var(--ink);opacity:.82;transition:opacity .2s}
+.nav-links a:hover{opacity:1;color:var(--teal)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff!important;padding:11px 20px;border-radius:50px;font-weight:600;font-size:.9rem;box-shadow:0 8px 22px rgba(37,211,102,.32);transition:transform .2s,box-shadow .2s;opacity:1!important}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,211,102,.42)}
+.nav-cta svg{width:17px;height:17px;fill:#fff}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;z-index:120}
+.burger span{width:24px;height:2.5px;background:var(--ink);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:74px 0 84px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-160px;right:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--blush-soft),transparent 70%);z-index:0}
+.hero::after{content:"";position:absolute;bottom:-200px;left:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(14,110,107,.07),transparent 70%);z-index:0}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero-loc{display:inline-flex;align-items:center;gap:9px;background:var(--white);border:1px solid var(--line);padding:8px 16px;border-radius:50px;font-size:.82rem;font-weight:500;color:var(--teal-deep);box-shadow:var(--shadow-sm);margin-bottom:26px}
+.hero-loc .pulse{width:8px;height:8px;border-radius:50%;background:var(--teal);position:relative}
+.hero-loc .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid var(--teal);animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:1}100%{transform:scale(2);opacity:0}}
+.hero h1{font-size:clamp(2.4rem,5vw,3.7rem);margin-bottom:22px}
+.hero p.lead{font-size:1.12rem;color:var(--grey);max-width:480px;margin-bottom:34px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn-wa{display:inline-flex;align-items:center;gap:11px;background:var(--wa);color:#fff;padding:17px 30px;border-radius:50px;font-weight:600;font-size:1.04rem;box-shadow:0 12px 30px rgba(37,211,102,.36);transition:transform .2s,box-shadow .2s;border:0;cursor:pointer;font-family:'Outfit',sans-serif}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(37,211,102,.46)}
+.btn-wa svg{width:22px;height:22px;fill:#fff}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font-weight:600;font-size:1rem;padding:15px 8px;border-bottom:2px solid transparent;transition:border-color .2s}
+.btn-ghost:hover{border-color:var(--gold)}
+.hero-trust{display:flex;gap:26px;margin-top:38px;flex-wrap:wrap}
+.hero-trust .ht{display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--ink);font-weight:500}
+.hero-trust svg{width:20px;height:20px;fill:none;stroke:var(--teal);stroke-width:2}
+
+/* foto profesional */
+.hero-photo{position:relative}
+.photo-frame{position:relative;border-radius:26px 26px 120px 26px;overflow:hidden;box-shadow:var(--shadow);background:var(--blush-soft);aspect-ratio:4/5}
+.photo-frame img{width:100%;height:100%;object-fit:cover}
+.photo-badge{position:absolute;bottom:22px;left:-22px;background:var(--white);border-radius:18px;padding:16px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;max-width:248px}
+.photo-badge .stars{color:var(--gold);font-size:.95rem;letter-spacing:1px}
+.photo-badge .pb-txt{font-size:.78rem;color:var(--grey);line-height:1.3}
+.photo-badge .pb-txt b{color:var(--ink);font-size:.92rem;display:block;font-family:'Fraunces',serif}
+.photo-tag{position:absolute;top:20px;right:-14px;background:var(--teal-deep);color:#fff;font-size:.74rem;font-weight:600;letter-spacing:.05em;padding:9px 16px;border-radius:50px;box-shadow:var(--shadow-sm)}
+
+/* ---------- TIRA DE CONFIANZA ---------- */
+.trust-strip{background:var(--teal-deep);color:#fff;padding:30px 0}
+.trust-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.ts-item .num{font-family:'Fraunces',serif;font-size:1.85rem;font-weight:600;color:#fff;display:block}
+.ts-item .lbl{font-size:.8rem;opacity:.82;letter-spacing:.04em}
+.ts-item .num .gold{color:var(--gold)}
+
+/* ---------- SECCIONES ---------- */
+section{position:relative}
+.sec-pad{padding:88px 0}
+.sec-head{max-width:680px;margin-bottom:54px}
+.sec-head .eyebrow{margin-bottom:14px;display:block}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:16px}
+.sec-head p{color:var(--grey);font-size:1.05rem}
+.sec-center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* sobre la doctora */
+.about{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.about-img{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1;background:var(--sand)}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin-bottom:20px}
+.about p{color:var(--grey);margin-bottom:18px;font-size:1.02rem}
+.creds{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.cred{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.cred .ck{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:5px}
+.cred .cv{font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.4}
+
+/* servicios */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:32px 28px;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--teal),var(--blush));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc:hover::before{transform:scaleX(1)}
+.svc-ic{width:54px;height:54px;border-radius:15px;background:var(--blush-soft);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.svc-ic svg{width:27px;height:27px;fill:none;stroke:var(--teal-deep);stroke-width:1.7}
+.svc h3{font-size:1.22rem;margin-bottom:10px}
+.svc p{color:var(--grey);font-size:.94rem}
+
+/* por qué elegir / promesa */
+.promise{background:linear-gradient(135deg,var(--blush-soft),var(--cream))}
+.promise-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.promise-list{list-style:none;margin-top:8px}
+.promise-list li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.promise-list li:last-child{border-bottom:0}
+.promise-list .pl-ic{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm)}
+.promise-list .pl-ic svg{width:20px;height:20px;fill:none;stroke:var(--teal);stroke-width:2.2}
+.promise-list .pl-txt b{display:block;font-family:'Fraunces',serif;font-size:1.08rem;color:var(--ink);margin-bottom:2px}
+.promise-list .pl-txt span{font-size:.92rem;color:var(--grey)}
+.promise-card{background:var(--white);border-radius:24px;padding:42px 38px;box-shadow:var(--shadow);text-align:center}
+.promise-card .pc-stars{color:var(--gold);font-size:1.3rem;letter-spacing:3px;margin-bottom:18px}
+.promise-card h3{font-size:1.5rem;margin-bottom:14px}
+.promise-card p{color:var(--grey);margin-bottom:28px;font-size:1rem}
+
+/* testimonios */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:32px 28px;position:relative}
+.testi .quote{font-family:'Fraunces',serif;font-size:3.4rem;color:var(--blush);line-height:.6;position:absolute;top:24px;right:26px}
+.testi p{color:var(--ink);font-size:.98rem;font-style:italic;margin-bottom:22px;position:relative;z-index:1}
+.testi .who{display:flex;align-items:center;gap:13px}
+.testi .who .av{width:46px;height:46px;border-radius:50%;background:var(--blush-soft);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;color:var(--teal-deep);font-size:1.1rem}
+.testi .who b{font-size:.95rem;display:block}
+.testi .who span{font-size:.82rem;color:var(--grey)}
+.testi .t-stars{color:var(--gold);font-size:.85rem;letter-spacing:1px;margin-bottom:14px}
+
+/* ubicación */
+.location{background:var(--white);border-top:1px solid var(--line)}
+.loc-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:50px;align-items:stretch}
+.loc-info{display:flex;flex-direction:column;justify-content:center}
+.loc-info h2{font-size:clamp(1.8rem,3.3vw,2.4rem);margin-bottom:20px}
+.loc-row{display:flex;gap:15px;margin-bottom:22px;align-items:flex-start}
+.loc-row .lr-ic{flex-shrink:0;width:44px;height:44px;border-radius:12px;background:var(--blush-soft);display:flex;align-items:center;justify-content:center}
+.loc-row .lr-ic svg{width:21px;height:21px;fill:none;stroke:var(--teal-deep);stroke-width:1.8}
+.loc-row .lr-txt b{display:block;font-family:'Fraunces',serif;font-size:1.05rem;margin-bottom:3px}
+.loc-row .lr-txt span{color:var(--grey);font-size:.94rem}
+.map-box{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);min-height:420px;border:1px solid var(--line)}
+.map-box iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+/* CTA final */
+.final-cta{background:var(--teal-deep);color:#fff;text-align:center;padding:92px 0;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;top:-120px;right:-120px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,75,.18),transparent 70%)}
+.final-cta::after{content:"";position:absolute;bottom:-140px;left:-100px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(246,215,222,.14),transparent 70%)}
+.final-cta .wrap{position:relative;z-index:1}
+.final-cta .eyebrow{color:var(--blush);margin-bottom:16px;display:block}
+.final-cta h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px;color:#fff}
+.final-cta p{font-size:1.1rem;opacity:.9;max-width:560px;margin:0 auto 36px}
+.final-cta .btn-wa{font-size:1.12rem;padding:19px 38px}
+
+/* footer */
+footer{background:var(--ink);color:#fff;padding:56px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-brand{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-size:1.3rem;margin-bottom:16px}
+.foot-brand img{height:40px}
+.foot-col p,.foot-col a{color:rgba(255,255,255,.72);font-size:.92rem;line-height:1.9}
+.foot-col a:hover{color:#fff}
+.foot-col h4{font-family:'Fraunces',serif;font-size:1.02rem;margin-bottom:14px;color:#fff;font-weight:500}
+.foot-social{display:flex;gap:12px;margin-top:18px}
+.foot-social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.foot-social a:hover{background:var(--wa)}
+.foot-social svg{width:18px;height:18px;fill:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;text-align:center;font-size:.84rem;color:rgba(255,255,255,.55)}
+
+/* botón flotante WA */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:0;background:var(--wa);color:#fff;border:0;cursor:pointer;border-radius:50px;box-shadow:0 10px 30px rgba(37,211,102,.45);overflow:hidden;transition:transform .25s;font-family:'Outfit',sans-serif}
+.wa-float:hover{transform:scale(1.04)}
+.wa-float .waf-ic{width:60px;height:60px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.wa-float .waf-ic svg{width:32px;height:32px;fill:#fff;animation:wiggle 2.6s infinite}
+@keyframes wiggle{0%,88%,100%{transform:rotate(0)}90%{transform:rotate(-12deg)}94%{transform:rotate(12deg)}}
+.wa-float .waf-txt{font-weight:600;font-size:.96rem;white-space:nowrap;max-width:0;overflow:hidden;transition:max-width .35s,padding .35s}
+.wa-float:hover .waf-txt{max-width:200px;padding-right:24px}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-photo{max-width:430px;margin:0 auto}
+  .about-grid,.promise-grid,.loc-grid{grid-template-columns:1fr;gap:40px}
+  .services-grid,.testi-grid{grid-template-columns:1fr 1fr}
+  .trust-strip .wrap{grid-template-columns:1fr 1fr;gap:26px}
+  .about-img{max-width:380px;margin:0 auto}
+}
+@media(max-width:680px){
+  .nav-links{position:fixed;inset:74px 0 auto 0;flex-direction:column;background:var(--cream);padding:24px;gap:6px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-130%);transition:transform .35s;align-items:stretch}
+  .nav-links.open{transform:translateY(0)}
+  .nav-links a{padding:13px 6px;border-bottom:1px solid var(--line);opacity:1;font-size:1rem}
+  .nav-links a:last-of-type{border-bottom:0}
+  .nav-cta{justify-content:center;margin-top:8px}
+  .burger{display:flex}
+  .services-grid,.testi-grid,.creds,.foot-grid{grid-template-columns:1fr}
+  .sec-pad{padding:62px 0}
+  .hero{padding:48px 0 60px}
+  .hero-ctas{flex-direction:column;align-items:stretch}
+  .btn-wa{justify-content:center}
+  .btn-ghost{justify-content:center}
+  .hero-trust{gap:16px}
+  .photo-badge{left:0;bottom:14px;max-width:210px}
+  .map-box,.map-box iframe{min-height:340px}
+  .wa-float .waf-txt{display:none}
+  .final-cta{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Dra. Tessa Bocardo">
+      <span class="dot"></span> Dra. Tessa Bocardo
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre la doctora</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#" class="nav-cta" onclick="return contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20consulta%20pedi%C3%A1trica.')">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="hero-loc"><span class="pulse"></span> Hospital Ángeles Mocel · CDMX</span>
+      <h1>El pediatra correcto para tu hijo <em>existe.</em> Y te está esperando.</h1>
+      <p class="lead">Soy la Dra. Tessa Bocardo. Acompaño a tu familia con atención cercana, humana y de la más alta calidad médica en el corazón de la Ciudad de México.</p>
+      <div class="hero-ctas">
+        <button class="btn-wa" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20consulta%20pedi%C3%A1trica%20para%20mi%20peque.')">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Escríbeme por WhatsApp
+        </button>
+        <a href="#servicios" class="btn-ghost">Conoce los servicios →</a>
+      </div>
+      <div class="hero-trust">
+        <span class="ht"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1L12 16.5 5.7 21l2.3-7.1-6-4.5h7.6z"/></svg> 5.0 en Google</span>
+        <span class="ht"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Instituto Nacional de Pediatría</span>
+        <span class="ht"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5 3.8 8.5 9 9 5.2-.5 9-4 9-9V7z"/></svg> Atención 24/7</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <span class="photo-tag">Pediatra certificada</span>
+        <img src="profesional.jpg" alt="Dra. Tessa Bocardo, pediatra en CDMX">
+      </div>
+      <div class="photo-badge">
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="pb-txt"><b>Familias que confían</b>Acompañadas desde el primer día</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIRA DE CONFIANZA -->
+<div class="trust-strip">
+  <div class="wrap">
+    <div class="ts-item"><span class="num">10<span class="gold">+</span></span><span class="lbl">Años cuidando niños</span></div>
+    <div class="ts-item"><span class="num">5.0<span class="gold">★</span></span><span class="lbl">Calificación en Google</span></div>
+    <div class="ts-item"><span class="num">24/7</span><span class="lbl">Urgencias disponibles</span></div>
+    <div class="ts-item"><span class="num">100%</span><span class="lbl">Atención personalizada</span></div>
+  </div>
+</div>
+
+<!-- SOBRE LA DOCTORA -->
+<section class="about sec-pad" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-img"><img src="imagen1.jpg" alt="Consultorio de la Dra. Tessa Bocardo"></div>
+    <div>
+      <span class="eyebrow">Sobre la doctora</span>
+      <h2 style="margin-top:14px">Cuidar a tu peque es <em>mi vocación.</em></h2>
+      <p>Soy la <b>Dra. Tessa Bocardo</b>, pediatra con una trayectoria larga atendiendo bebés y niños en la Ciudad de México. Mi consultorio se encuentra en el Hospital Ángeles Mocel, donde combino la mejor tecnología médica con un trato cercano y humano.</p>
+      <p>Acompaño a cada familia desde la consulta prenatal hasta los primeros años de vida de su peque, con la calma y la confianza que unos padres necesitan.</p>
+      <div class="creds">
+        <div class="cred"><div class="ck">Formación</div><div class="cv">Facultad de Medicina, Universidad Autónoma de Querétaro</div></div>
+        <div class="cred"><div class="ck">Especialidad</div><div class="cv">Pediatría, Instituto Nacional de Pediatría, UNAM</div></div>
+        <div class="cred"><div class="ck">Cédula profesional</div><div class="cv">12521389</div></div>
+        <div class="cred"><div class="ck">Cédula de especialidad</div><div class="cv">14891167</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="sec-pad" id="servicios">
+  <div class="wrap">
+    <div class="sec-head sec-center">
+      <span class="eyebrow">Servicios pediátricos</span>
+      <h2>Te acompaño en <em>cada etapa</em> de tu peque</h2>
+      <p>Desde la consulta prenatal hasta el seguimiento de los primeros años, todo lo que tu familia necesita en un solo lugar.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg></div>
+        <h3>Consulta pediátrica</h3>
+        <p>Atención clínica integral para enfermedades comunes y seguimiento médico continuo de tu hijo.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Consulta del niño sano</h3>
+        <p>Control de crecimiento, desarrollo, nutrición y esquema de vacunación en cada etapa.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 8v8M8 12h8"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg></div>
+        <h3>Consulta prenatal</h3>
+        <p>Acompañamiento desde el embarazo para preparar la llegada de tu bebé con tranquilidad.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M20 8.5C20 12 12 19 12 19S4 12 4 8.5A4.5 4.5 0 0112 6a4.5 4.5 0 018 2.5z"/></svg></div>
+        <h3>Hospitalización</h3>
+        <p>Manejo médico durante la estancia hospitalaria, con cercanía y comunicación clara contigo.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <h3>Vacunación</h3>
+        <p>Esquema completo y al día, con la orientación que necesitas para proteger a tu peque.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Urgencias 24/7</h3>
+        <p>Atención inmediata en el Hospital Ángeles Mocel cuando tu hijo más lo necesita.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:46px">
+      <button class="btn-wa" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20para%20mi%20hijo.')">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Agenda la consulta de tu hijo
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PROMESA / POR QUÉ ELEGIR -->
+<section class="promise sec-pad">
+  <div class="wrap promise-grid">
+    <div>
+      <span class="eyebrow">Por qué las familias me eligen</span>
+      <h2 style="margin:14px 0 8px;font-size:clamp(1.9rem,3.4vw,2.5rem)">La tranquilidad de saber que tu hijo está <em>en buenas manos.</em></h2>
+      <ul class="promise-list">
+        <li>
+          <span class="pl-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="pl-txt"><b>Tiempo real para tu peque</b><span>Cada consulta dura el tiempo necesario para revisarlo y resolver todas tus dudas con calma.</span></span>
+        </li>
+        <li>
+          <span class="pl-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="pl-txt"><b>Respuesta inmediata por WhatsApp</b><span>Escríbeme y coordinamos la atención de tu hijo sin esperas ni intermediarios.</span></span>
+        </li>
+        <li>
+          <span class="pl-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="pl-txt"><b>Respaldo del Hospital Ángeles Mocel</b><span>Toda la tecnología y seguridad de un hospital de primer nivel en CDMX.</span></span>
+        </li>
+        <li>
+          <span class="pl-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="pl-txt"><b>Trato cercano y humano</b><span>Escucho de verdad. Acompaño a cada familia con paciencia y un enfoque humano.</span></span>
+        </li>
+      </ul>
+    </div>
+    <div class="promise-card">
+      <div class="pc-stars">★★★★★</div>
+      <h3>Agenda hoy mismo</h3>
+      <p>No dejes la salud de tu hijo para mañana. Escríbeme ahora y reserva tu consulta de forma fácil, rápida y segura.</p>
+      <button class="btn-wa" style="width:100%;justify-content:center" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20reservar%20una%20consulta%20pedi%C3%A1trica.')">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Escríbeme ahora
+      </button>
+      <p style="font-size:.82rem;margin:16px 0 0;color:var(--grey)">Lun–Vie 4:00–8:00 pm · Sáb 9:00 am–2:00 pm</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="sec-pad">
+  <div class="wrap">
+    <div class="sec-head sec-center">
+      <span class="eyebrow">Testimonios</span>
+      <h2>Lo que dicen <em>las familias</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <span class="quote">"</span>
+        <div class="t-stars">★★★★★</div>
+        <p>La Dra. Tessa nos acompañó desde el primer día. Su calma y conocimiento nos dieron toda la confianza que necesitábamos como papás primerizos.</p>
+        <div class="who"><span class="av">M</span><div><b>Mariana R.</b><span>Mamá de Leonel, 3 meses</span></div></div>
+      </div>
+      <div class="testi">
+        <span class="quote">"</span>
+        <div class="t-stars">★★★★★</div>
+        <p>Es de esos médicos que escuchan de verdad. Resuelve cada duda con paciencia y siempre con un enfoque humano.</p>
+        <div class="who"><span class="av">A</span><div><b>Andrea G.</b><span>Mamá de Sofía, 2 años</span></div></div>
+      </div>
+      <div class="testi">
+        <span class="quote">"</span>
+        <div class="t-stars">★★★★★</div>
+        <p>Nos sentimos cuidados y bien informados en cada paso. Una pediatra en la que confiamos plenamente para nuestros hijos.</p>
+        <div class="who"><span class="av">L</span><div><b>Luis y Paola M.</b><span>Papás de dos pequeños</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="location sec-pad" id="ubicacion">
+  <div class="wrap loc-grid">
+    <div class="loc-info">
+      <span class="eyebrow">Ubicación</span>
+      <h2 style="margin-top:14px">Te espero en <em>Mocel</em></h2>
+      <div class="loc-row">
+        <span class="lr-ic"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div class="lr-txt"><b>Hospital Ángeles Mocel</b><span>Torre de Hospitalización 203 B · Consultorio 203B<br>C. Gob. Gregorio V. Gelati 29, Miguel Hidalgo, 11850, CDMX</span></div>
+      </div>
+      <div class="loc-row">
+        <span class="lr-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div class="lr-txt"><b>Horarios de consulta</b><span>Lunes a Viernes: 4:00 pm – 8:00 pm<br>Sábado: 9:00 am – 2:00 pm</span></div>
+      </div>
+      <div class="loc-row">
+        <span class="lr-ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg></span>
+        <div class="lr-txt"><b>Contacto directo</b><span>WhatsApp: +52 55 6537 8277</span></div>
+      </div>
+      <button class="btn-wa" style="margin-top:14px" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20cita%20en%20el%20Hospital%20%C3%81ngeles%20Mocel.')">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Cómo llegar y agendar
+      </button>
+    </div>
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0411321849742!2d-99.18510909999999!3d19.4106287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3794c1b565%3A0x547caf7d49ddbed3!2sDra.%20Pediatra%20Tessa%20Bocardo!5e0!3m2!1ses-419!2sco!4v1781903617285!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="wrap">
+    <span class="eyebrow">Estamos contigo desde el primer encuentro</span>
+    <h2>La salud de tu hijo no puede esperar</h2>
+    <p>Dale a tu peque la atención pediátrica que merece. Escríbeme hoy y agenda con la confianza de estar en el lugar correcto.</p>
+    <button class="btn-wa" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20consulta%20pedi%C3%A1trica%20para%20mi%20hijo.')">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      Agendar consulta por WhatsApp
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand"><img src="logo.png" alt="Dra. Tessa Bocardo"> Dra. Tessa Bocardo</div>
+        <p>Cuidado pediátrico con corazón y ciencia, desde el primer latido hasta los primeros pasos.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/mipediatratessa/" aria-label="Facebook" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v7h3v-7H16l.5-3h-3V9.5c0-.3.2-.5.5-.5z"/></svg></a>
+          <a href="https://www.instagram.com/mipediatratessa" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zm0 6.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM17 3H7a4 4 0 00-4 4v10a4 4 0 004 4h10a4 4 0 004-4V7a4 4 0 00-4-4zm2 14a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2zm-1.5-9.5a1 1 0 11-2 0 1 1 0 012 0z"/></svg></a>
+          <a href="#" onclick="return contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20consulta.')" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a><br>
+        <a href="#sobre">Sobre la doctora</a><br>
+        <a href="#servicios">Servicios</a><br>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <p>Hospital Ángeles Mocel<br>Miguel Hidalgo, 11850, CDMX</p>
+        <p>WhatsApp: +52 55 6537 8277</p>
+        <p>Lun–Vie 4–8 pm · Sáb 9 am–2 pm</p>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Dra. Tessa Bocardo · Pediatra en CDMX · Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<button class="wa-float" onclick="contactoWhatsApp('https://wa.me/525565378277?text=Hola%20Dra.%20Tessa,%20quiero%20agendar%20una%20consulta%20pedi%C3%A1trica.')" aria-label="Escríbeme por WhatsApp">
+  <span class="waf-ic"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm5.5-5.6c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+  <span class="waf-txt">Escríbeme por WhatsApp</span>
+</button>
+
+<script>
+// Menú hamburguesa
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  navLinks.classList.toggle('open');
+});
+// Cerrar menú al hacer clic en un enlace
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    burger.classList.remove('open');
+    navLinks.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
