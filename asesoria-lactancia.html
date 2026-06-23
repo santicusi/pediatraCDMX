@@ -14,6 +14,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-17764356102');
+  gtag('config', 'AW-17966068862');
 </script>
 
 <!-- Función de conversión: se dispara y luego abre WhatsApp -->
@@ -25,6 +26,8 @@
       'currency': 'COP',
       'event_callback': function(){ window.open(url, '_blank'); }
     });
+    // Conversión adicional: Contacto_WhatsApp
+    gtag('event', 'conversion', {'send_to': 'AW-17966068862/Yo1FCPH5jPwbEP7o8fZC'});
     // Respaldo por si el callback no se ejecuta
     setTimeout(function(){ window.open(url, '_blank'); }, 700);
     return false;
